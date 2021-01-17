@@ -13,7 +13,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        fetch('http://127.0.0.1:5000/api/all_blogposts')
+        fetch('https://a-blair-portfolio-api.herokuapp.com/api/all_blogposts')
             .then(res => res.json())
             .then(data => this.setState({posts: data}))
             .catch(error => console.error(error))
