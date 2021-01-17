@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import PageTitle from '../components/PageTitle';
 import Showcase from '../components/Showcase';
+import BlogPost from '../components/BlogPost';
 
 class Home extends Component {
     constructor() {
         super();
 
         this.state = {
+            posts : []
         }
     }
 
     componentDidMount() {
-
+        fetch('http://127.0.0.1:5000/api/all_blogposts')
+            .then(res => res.json())
+            .then(data => this.setState({posts: data}))
+            .catch(error => console.error(error))
     }
 
     render() {
@@ -40,6 +45,12 @@ class Home extends Component {
                             <img className="feature-image" src="https://via.placeholder.com/300x300"/>
                         </div>
                         <p className="feature-summary">This is where the article summary goes. It will be supplied by the website API along with the image, title, and link location. Unfortunately, I have not created or linked the website API yet, so you just have filler text and a filler image.</p>
+                    </div>
+                </div>
+
+                <div className="page-posts row">
+                    <div className="container col">
+                        {this.state.posts.reverse().map(post => <div className="row"><BlogPost post={post} key={post.id} /></div>)}
                     </div>
                 </div>
             </div>
