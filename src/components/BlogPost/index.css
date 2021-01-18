@@ -1,0 +1,21 @@
+.BlogPost-container {
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:1em;
+}
+
+.BlogPost-title-container {
+}
+
+.BlogPost-content-container {
+    margin-left:2em;
+    margin-right:2em;
+}
+
+.BlogPost-author {
+    font-size:.75em;
+}
+
+.BlogPost-tags {
+    font-size:.75em;
+}

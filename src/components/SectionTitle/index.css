@@ -1,0 +1,9 @@
+.SectionTitle-container {
+    margin:0;
+    padding-right:1em;
+}
+.SectionTitle-content {
+    font-size:2em;
+    font-weight:bold;
+    border-bottom:1px solid black;
+}

@@ -21,6 +21,7 @@ export default class App extends Component {
         <div className="global_content row">
           <Switch>
             <Route exact path='/' render={ () => <Home page="Home" /> } />
+            <Route exact path='/projects' render={ () => <Home page="Projects" /> } />
           </Switch>
         </div>
         <div className="global_Footer row">
