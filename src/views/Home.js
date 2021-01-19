@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SectionTitle from '../components/SectionTitle';
 import Showcase from '../components/Showcase';
 import BlogPost from '../components/BlogPost';
-import ArticleCard from '../components/ArticleCard';
+import ProjectCard from '../components/ProjectCard';
 
 class Home extends Component {
     constructor() {
@@ -32,13 +32,13 @@ class Home extends Component {
                 <Showcase title="Never Stop Progress" lead="Try, fail, adapt, repeat" link="/"/>
                 <SectionTitle title="Featured Projects" />
                 <div className="page-features row">
-                    {this.state.projects.reverse().map(project => <ArticleCard article={project} key={project.id}/>)}
+                    {this.state.projects.reverse().map(project => <div className="col-md-3"><ProjectCard article={project} key={project.id}/></div>)}
                 </div>
-
-                <SectionTitle title="Blog Posts" />
+                
                 <div className="page-posts row">
-                    <div className="container col">
-                        {this.state.posts.reverse().map(post => <div className="row"><BlogPost post={post} key={post.id} /></div>)}
+                    <div className="col-md-6">
+                        <SectionTitle title="Recent Blog Posts" />
+                        {this.state.posts.reverse().slice(0, 5).map(post => <div className="row"><BlogPost post={post} key={post.id} /></div>)}
                     </div>
                 </div>
             </div>

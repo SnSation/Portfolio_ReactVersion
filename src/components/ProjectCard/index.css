@@ -1,0 +1,32 @@
+.ProjectCard-container {
+    padding:1em;
+}
+
+.ProjectCard-title-container {
+    padding:0;
+    margin:0;
+    justify-content:center;
+}
+.ProjectCard-title {
+    font-size:1.5em;
+    font-weight:bold;
+    margin:0;
+}
+
+.ProjectCard-image-container {
+    margin:0;
+    padding:1em;
+    justify-content:center;
+}
+
+.ProjectCard-description-container {
+    margin:0;
+}
+
+.ProjectCard-description {
+    padding:0;
+}
+
+.ProjectCard-tags-container {
+    margin:0;
+}

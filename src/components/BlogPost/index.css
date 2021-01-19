@@ -1,10 +1,12 @@
 .BlogPost-container {
-    padding-left:2em;
-    padding-right:2em;
-    padding-top:1em;
+    margin-left:2em;
+    margin-right:2em;
+    margin-top:1em;
+    border-bottom:solid 1px black;
 }
 
 .BlogPost-title-container {
+    margin:0;
 }
 
 .BlogPost-content-container {
@@ -12,8 +14,15 @@
     margin-right:2em;
 }
 
+.BlogPost-author-container {
+    margin:0;
+}
 .BlogPost-author {
     font-size:.75em;
+}
+
+.BlogPost-tags-container {
+    margin:0;
 }
 
 .BlogPost-tags {

@@ -1,0 +1,47 @@
+.fa {
+    padding: .5em;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin-right:1em;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+    color:white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-github {
+    background: black;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.MainFooter-container {
+    padding:1em;
+    margin-top:1em;
+}
+
+.MainFooter-contact-title-container{
+    padding-left:1em;
+    padding-right:1em;
+}
+
+.MainFooter-contact-content-container {
+    padding-left:1em;
+    padding-right:1em;
+}
+
+.contact-submit {
+    margin-top:1em;
+    margin-bottom:1em;
+}

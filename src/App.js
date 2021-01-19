@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import Home from './views/Home';
+import MainFooter from './components/MainFooter'
 
 export default class App extends Component {
   constructor(){
@@ -15,18 +16,18 @@ export default class App extends Component {
   render(){
     return (
       <div className="global_Container col">
-        <div className="global_Header row">
-          <Navbar />
-        </div>
-        <div className="global_content row">
+
+        <Navbar />
+
+        <div className="global_Content row">
           <Switch>
             <Route exact path='/' render={ () => <Home page="Home" /> } />
             <Route exact path='/projects' render={ () => <Home page="Projects" /> } />
           </Switch>
         </div>
-        <div className="global_Footer row">
 
-        </div>
+        <MainFooter />
+
       </div>
     )
   }
